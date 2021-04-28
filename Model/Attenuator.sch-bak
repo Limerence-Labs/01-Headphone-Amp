@@ -1,0 +1,112 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 2000 1500 0    50   Input ~ 0
+IN-
+Text HLabel 2000 3000 0    50   Input ~ 0
+In+
+Text HLabel 3500 1500 2    50   Output ~ 0
+Out-
+Text HLabel 3500 3000 2    50   Output ~ 0
+Out+
+$Comp
+L Device:R R34
+U 1 1 608865E3
+P 2350 1500
+F 0 "R34" V 2143 1500 50  0000 C CNN
+F 1 "1k" V 2234 1500 50  0000 C CNN
+F 2 "" V 2280 1500 50  0001 C CNN
+F 3 "~" H 2350 1500 50  0001 C CNN
+	1    2350 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 60889CF6
+P 2350 3000
+F 0 "R7" V 2143 3000 50  0000 C CNN
+F 1 "1k" V 2234 3000 50  0000 C CNN
+F 2 "" V 2280 3000 50  0001 C CNN
+F 3 "~" H 2350 3000 50  0001 C CNN
+	1    2350 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 6088A137
+P 2650 3300
+F 0 "R9" H 2580 3254 50  0000 R CNN
+F 1 "1k" H 2580 3345 50  0000 R CNN
+F 2 "" V 2580 3300 50  0001 C CNN
+F 3 "~" H 2650 3300 50  0001 C CNN
+	1    2650 3300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 6088B06F
+P 2650 1800
+F 0 "R8" H 2580 1754 50  0000 R CNN
+F 1 "1k" H 2580 1845 50  0000 R CNN
+F 2 "" V 2580 1800 50  0001 C CNN
+F 3 "~" H 2650 1800 50  0001 C CNN
+	1    2650 1800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2200 1500 2000 1500
+Wire Wire Line
+	2500 1500 2650 1500
+Wire Wire Line
+	2650 1500 2650 1650
+Wire Wire Line
+	2650 1500 3500 1500
+Connection ~ 2650 1500
+Wire Wire Line
+	2000 3000 2200 3000
+Wire Wire Line
+	2500 3000 2650 3000
+Wire Wire Line
+	2650 3000 2650 3150
+Wire Wire Line
+	2650 3000 3500 3000
+Connection ~ 2650 3000
+Wire Wire Line
+	2650 2000 2650 1950
+Wire Wire Line
+	2650 3500 2650 3450
+$Comp
+L power:GND #PWR016
+U 1 1 6088BE5E
+P 2650 3500
+F 0 "#PWR016" H 2650 3250 50  0001 C CNN
+F 1 "GND" H 2655 3327 50  0000 C CNN
+F 2 "" H 2650 3500 50  0001 C CNN
+F 3 "" H 2650 3500 50  0001 C CNN
+	1    2650 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR013
+U 1 1 6088C589
+P 2650 2000
+F 0 "#PWR013" H 2650 1750 50  0001 C CNN
+F 1 "GND" H 2655 1827 50  0000 C CNN
+F 2 "" H 2650 2000 50  0001 C CNN
+F 3 "" H 2650 2000 50  0001 C CNN
+	1    2650 2000
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

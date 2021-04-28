@@ -1,0 +1,462 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R1
+U 1 1 60878D91
+P 2300 1550
+AR Path="/608770BD/60878D91" Ref="R1"  Part="1" 
+AR Path="/608902DE/60878D91" Ref="R10"  Part="1" 
+F 0 "R1" V 2093 1550 50  0000 C CNN
+F 1 "820R" V 2184 1550 50  0000 C CNN
+F 2 "" V 2230 1550 50  0001 C CNN
+F 3 "~" H 2300 1550 50  0001 C CNN
+F 4 "R" H 2300 1550 50  0001 C CNN "Spice_Primitive"
+F 5 "820" H 2300 1550 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 2300 1550 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    2300 1550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 6087D9E2
+P 2300 1900
+AR Path="/608770BD/6087D9E2" Ref="C1"  Part="1" 
+AR Path="/608902DE/6087D9E2" Ref="C3"  Part="1" 
+F 0 "C1" V 2048 1900 50  0000 C CNN
+F 1 "2200pF" V 2139 1900 50  0000 C CNN
+F 2 "" H 2338 1750 50  0001 C CNN
+F 3 "~" H 2300 1900 50  0001 C CNN
+	1    2300 1900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2000 2500 1900 2500
+Wire Wire Line
+	1900 2500 1900 1900
+Wire Wire Line
+	1900 1900 2150 1900
+Wire Wire Line
+	1900 1900 1900 1550
+Wire Wire Line
+	1900 1550 2150 1550
+Connection ~ 1900 1900
+Wire Wire Line
+	2600 2600 3000 2600
+Wire Wire Line
+	3000 2600 3000 1900
+Wire Wire Line
+	3000 1900 2450 1900
+Wire Wire Line
+	2450 1550 3000 1550
+Wire Wire Line
+	3000 1550 3000 1900
+Connection ~ 3000 1900
+Wire Wire Line
+	2000 2700 1900 2700
+Wire Wire Line
+	1900 2700 1900 2900
+$Comp
+L power:GND #PWR03
+U 1 1 60882A2B
+P 1900 2900
+AR Path="/608770BD/60882A2B" Ref="#PWR03"  Part="1" 
+AR Path="/608902DE/60882A2B" Ref="#PWR017"  Part="1" 
+F 0 "#PWR03" H 1900 2650 50  0001 C CNN
+F 1 "GND" H 1905 2727 50  0000 C CNN
+F 2 "" H 1900 2900 50  0001 C CNN
+F 3 "" H 1900 2900 50  0001 C CNN
+	1    1900 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+15V #PWR06
+U 1 1 60883780
+P 2200 2900
+AR Path="/608770BD/60883780" Ref="#PWR06"  Part="1" 
+AR Path="/608902DE/60883780" Ref="#PWR020"  Part="1" 
+F 0 "#PWR06" H 2200 2750 50  0001 C CNN
+F 1 "+15V" H 2215 3073 50  0000 C CNN
+F 2 "" H 2200 2900 50  0001 C CNN
+F 3 "" H 2200 2900 50  0001 C CNN
+	1    2200 2900
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:-15V #PWR05
+U 1 1 60884A7E
+P 2200 2300
+AR Path="/608770BD/60884A7E" Ref="#PWR05"  Part="1" 
+AR Path="/608902DE/60884A7E" Ref="#PWR019"  Part="1" 
+F 0 "#PWR05" H 2200 2400 50  0001 C CNN
+F 1 "-15V" H 2215 2473 50  0000 C CNN
+F 2 "" H 2200 2300 50  0001 C CNN
+F 3 "" H 2200 2300 50  0001 C CNN
+	1    2200 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 2500 1500 2500
+Connection ~ 1900 2500
+$Comp
+L Device:R R2
+U 1 1 608A3F0E
+P 2300 4050
+AR Path="/608770BD/608A3F0E" Ref="R2"  Part="1" 
+AR Path="/608902DE/608A3F0E" Ref="R11"  Part="1" 
+F 0 "R2" V 2093 4050 50  0000 C CNN
+F 1 "820" V 2184 4050 50  0000 C CNN
+F 2 "" V 2230 4050 50  0001 C CNN
+F 3 "~" H 2300 4050 50  0001 C CNN
+	1    2300 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 608A3F14
+P 2300 4400
+AR Path="/608770BD/608A3F14" Ref="C2"  Part="1" 
+AR Path="/608902DE/608A3F14" Ref="C4"  Part="1" 
+F 0 "C2" V 2048 4400 50  0000 C CNN
+F 1 "2200pF" V 2139 4400 50  0000 C CNN
+F 2 "" H 2338 4250 50  0001 C CNN
+F 3 "~" H 2300 4400 50  0001 C CNN
+F 4 "C" H 2300 4400 50  0001 C CNN "Spice_Primitive"
+F 5 "2200p" H 2300 4400 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 2300 4400 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    2300 4400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2000 5000 1900 5000
+Wire Wire Line
+	1900 5000 1900 4400
+Wire Wire Line
+	1900 4400 2150 4400
+Wire Wire Line
+	1900 4400 1900 4050
+Wire Wire Line
+	1900 4050 2150 4050
+Connection ~ 1900 4400
+Wire Wire Line
+	3000 5100 3000 4400
+Wire Wire Line
+	3000 4400 2450 4400
+Wire Wire Line
+	2450 4050 3000 4050
+Wire Wire Line
+	3000 4050 3000 4400
+Connection ~ 3000 4400
+Wire Wire Line
+	2000 5200 1900 5200
+Wire Wire Line
+	1900 5200 1900 5400
+$Comp
+L power:GND #PWR04
+U 1 1 608A3F2E
+P 1900 5400
+AR Path="/608770BD/608A3F2E" Ref="#PWR04"  Part="1" 
+AR Path="/608902DE/608A3F2E" Ref="#PWR018"  Part="1" 
+F 0 "#PWR04" H 1900 5150 50  0001 C CNN
+F 1 "GND" H 1905 5227 50  0000 C CNN
+F 2 "" H 1900 5400 50  0001 C CNN
+F 3 "" H 1900 5400 50  0001 C CNN
+	1    1900 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+15V #PWR08
+U 1 1 608A3F34
+P 2200 5400
+AR Path="/608770BD/608A3F34" Ref="#PWR08"  Part="1" 
+AR Path="/608902DE/608A3F34" Ref="#PWR022"  Part="1" 
+F 0 "#PWR08" H 2200 5250 50  0001 C CNN
+F 1 "+15V" H 2215 5573 50  0000 C CNN
+F 2 "" H 2200 5400 50  0001 C CNN
+F 3 "" H 2200 5400 50  0001 C CNN
+	1    2200 5400
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:-15V #PWR07
+U 1 1 608A3F3A
+P 2200 4800
+AR Path="/608770BD/608A3F3A" Ref="#PWR07"  Part="1" 
+AR Path="/608902DE/608A3F3A" Ref="#PWR021"  Part="1" 
+F 0 "#PWR07" H 2200 4900 50  0001 C CNN
+F 1 "-15V" H 2215 4973 50  0000 C CNN
+F 2 "" H 2200 4800 50  0001 C CNN
+F 3 "" H 2200 4800 50  0001 C CNN
+	1    2200 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 5000 1500 5000
+Connection ~ 1900 5000
+Wire Wire Line
+	3000 2600 3500 2600
+Connection ~ 3000 2600
+Wire Wire Line
+	3000 5100 3500 5100
+Connection ~ 3000 5100
+$Comp
+L Device:R R3
+U 1 1 608A5710
+P 3850 3650
+AR Path="/608770BD/608A5710" Ref="R3"  Part="1" 
+AR Path="/608902DE/608A5710" Ref="R12"  Part="1" 
+F 0 "R3" V 3643 3650 50  0000 C CNN
+F 1 "360" V 3734 3650 50  0000 C CNN
+F 2 "" V 3780 3650 50  0001 C CNN
+F 3 "~" H 3850 3650 50  0001 C CNN
+	1    3850 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 608A6031
+P 3850 3850
+AR Path="/608770BD/608A6031" Ref="R4"  Part="1" 
+AR Path="/608902DE/608A6031" Ref="R13"  Part="1" 
+F 0 "R4" V 3643 3850 50  0000 C CNN
+F 1 "360" V 3734 3850 50  0000 C CNN
+F 2 "" V 3780 3850 50  0001 C CNN
+F 3 "~" H 3850 3850 50  0001 C CNN
+	1    3850 3850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3500 3650 3700 3650
+Wire Wire Line
+	3500 2600 3500 3650
+Wire Wire Line
+	3500 3850 3700 3850
+Wire Wire Line
+	3500 3850 3500 5100
+Wire Wire Line
+	4000 3650 4250 3650
+Wire Wire Line
+	4000 3850 4250 3850
+$Comp
+L power:+15V #PWR012
+U 1 1 608AACC8
+P 4600 4050
+AR Path="/608770BD/608AACC8" Ref="#PWR012"  Part="1" 
+AR Path="/608902DE/608AACC8" Ref="#PWR026"  Part="1" 
+F 0 "#PWR012" H 4600 3900 50  0001 C CNN
+F 1 "+15V" H 4615 4223 50  0000 C CNN
+F 2 "" H 4600 4050 50  0001 C CNN
+F 3 "" H 4600 4050 50  0001 C CNN
+	1    4600 4050
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:-15V #PWR011
+U 1 1 608AB4A8
+P 4600 3450
+AR Path="/608770BD/608AB4A8" Ref="#PWR011"  Part="1" 
+AR Path="/608902DE/608AB4A8" Ref="#PWR025"  Part="1" 
+F 0 "#PWR011" H 4600 3550 50  0001 C CNN
+F 1 "-15V" H 4615 3623 50  0000 C CNN
+F 2 "" H 4600 3450 50  0001 C CNN
+F 3 "" H 4600 3450 50  0001 C CNN
+	1    4600 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 608ABB10
+P 4650 2500
+AR Path="/608770BD/608ABB10" Ref="R6"  Part="1" 
+AR Path="/608902DE/608ABB10" Ref="R15"  Part="1" 
+F 0 "R6" V 4443 2500 50  0000 C CNN
+F 1 "360" V 4534 2500 50  0000 C CNN
+F 2 "" V 4580 2500 50  0001 C CNN
+F 3 "~" H 4650 2500 50  0001 C CNN
+	1    4650 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 608AC20F
+P 4650 3000
+AR Path="/608770BD/608AC20F" Ref="C6"  Part="1" 
+AR Path="/608902DE/608AC20F" Ref="C8"  Part="1" 
+F 0 "C6" V 4398 3000 50  0000 C CNN
+F 1 "2700pF" V 4489 3000 50  0000 C CNN
+F 2 "" H 4688 2850 50  0001 C CNN
+F 3 "~" H 4650 3000 50  0001 C CNN
+	1    4650 3000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4500 2500 4250 2500
+Wire Wire Line
+	4250 2500 4250 3000
+Connection ~ 4250 3650
+Wire Wire Line
+	4250 3650 4400 3650
+Wire Wire Line
+	4500 3000 4250 3000
+Connection ~ 4250 3000
+Wire Wire Line
+	4250 3000 4250 3650
+Wire Wire Line
+	4800 3000 5250 3000
+Wire Wire Line
+	5250 3000 5250 3750
+Wire Wire Line
+	5250 3000 5250 2500
+Wire Wire Line
+	5250 2500 4800 2500
+Connection ~ 5250 3000
+$Comp
+L Device:C C5
+U 1 1 608AF88B
+P 4000 4650
+AR Path="/608770BD/608AF88B" Ref="C5"  Part="1" 
+AR Path="/608902DE/608AF88B" Ref="C7"  Part="1" 
+F 0 "C5" H 3885 4604 50  0000 R CNN
+F 1 "2700pF" H 3885 4695 50  0000 R CNN
+F 2 "" H 4038 4500 50  0001 C CNN
+F 3 "~" H 4000 4650 50  0001 C CNN
+	1    4000 4650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 608B00CD
+P 4500 4650
+AR Path="/608770BD/608B00CD" Ref="R5"  Part="1" 
+AR Path="/608902DE/608B00CD" Ref="R14"  Part="1" 
+F 0 "R5" H 4430 4604 50  0000 R CNN
+F 1 "360" H 4430 4695 50  0000 R CNN
+F 2 "" V 4430 4650 50  0001 C CNN
+F 3 "~" H 4500 4650 50  0001 C CNN
+	1    4500 4650
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR09
+U 1 1 608B07C6
+P 4000 5000
+AR Path="/608770BD/608B07C6" Ref="#PWR09"  Part="1" 
+AR Path="/608902DE/608B07C6" Ref="#PWR023"  Part="1" 
+F 0 "#PWR09" H 4000 4750 50  0001 C CNN
+F 1 "GND" H 4005 4827 50  0000 C CNN
+F 2 "" H 4000 5000 50  0001 C CNN
+F 3 "" H 4000 5000 50  0001 C CNN
+	1    4000 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR010
+U 1 1 608B0B51
+P 4500 5000
+AR Path="/608770BD/608B0B51" Ref="#PWR010"  Part="1" 
+AR Path="/608902DE/608B0B51" Ref="#PWR024"  Part="1" 
+F 0 "#PWR010" H 4500 4750 50  0001 C CNN
+F 1 "GND" H 4505 4827 50  0000 C CNN
+F 2 "" H 4500 5000 50  0001 C CNN
+F 3 "" H 4500 5000 50  0001 C CNN
+	1    4500 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 4500 4000 4350
+Wire Wire Line
+	4000 4350 4250 4350
+Wire Wire Line
+	4500 4350 4500 4500
+Wire Wire Line
+	4250 4350 4250 3850
+Connection ~ 4250 4350
+Wire Wire Line
+	4250 4350 4500 4350
+Connection ~ 4250 3850
+Wire Wire Line
+	4250 3850 4400 3850
+Wire Wire Line
+	4000 5000 4000 4800
+Wire Wire Line
+	4500 5000 4500 4800
+Wire Wire Line
+	5250 3750 6000 3750
+Connection ~ 5250 3750
+Wire Wire Line
+	2600 5100 3000 5100
+Wire Wire Line
+	5000 3750 5250 3750
+$Comp
+L pspice:OPAMP U1
+U 1 1 608CE7EE
+P 2300 2600
+AR Path="/608770BD/608CE7EE" Ref="U1"  Part="1" 
+AR Path="/608902DE/608CE7EE" Ref="U4"  Part="1" 
+F 0 "U1" H 2300 2119 50  0000 C CNN
+F 1 "OPAMP" H 2300 2210 50  0000 C CNN
+F 2 "" H 2300 2600 50  0001 C CNN
+F 3 "~" H 2300 2600 50  0001 C CNN
+F 4 "X" H 2300 2600 50  0001 C CNN "Spice_Primitive"
+F 5 "NE5532TI_SN" H 2300 2600 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 2300 2600 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "/Users/gavinatkinson/Documents/Limerence Labs/Component Models/NE5532_SN.lib" H 2300 2600 50  0001 C CNN "Spice_Lib_File"
+F 8 "1 2 4 5 3" H 2300 2600 50  0001 C CNN "Spice_Node_Sequence"
+	1    2300 2600
+	1    0    0    1   
+$EndComp
+Text HLabel 1500 2500 0    50   Input ~ 0
+IN-
+Text HLabel 1500 5000 0    50   Input ~ 0
+IN+
+Text HLabel 6000 3750 2    50   Output ~ 0
+OUT
+$Comp
+L pspice:OPAMP U2
+U 1 1 60878D5E
+P 2300 5100
+AR Path="/608770BD/60878D5E" Ref="U2"  Part="1" 
+AR Path="/608902DE/60878D5E" Ref="U5"  Part="1" 
+F 0 "U2" H 2300 4619 50  0000 C CNN
+F 1 "OPAMP" H 2300 4710 50  0000 C CNN
+F 2 "" H 2300 5100 50  0001 C CNN
+F 3 "~" H 2300 5100 50  0001 C CNN
+F 4 "X" H 2300 5100 50  0001 C CNN "Spice_Primitive"
+F 5 "NE5532TI_SN" H 2300 5100 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 2300 5100 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "/Users/gavinatkinson/Documents/Limerence Labs/Component Models/NE5532_SN.lib" H 2300 5100 50  0001 C CNN "Spice_Lib_File"
+F 8 "1 2 4 5 3" H 2300 5100 50  0001 C CNN "Spice_Node_Sequence"
+	1    2300 5100
+	1    0    0    1   
+$EndComp
+$Comp
+L pspice:OPAMP U3
+U 1 1 60879879
+P 4700 3750
+AR Path="/608770BD/60879879" Ref="U3"  Part="1" 
+AR Path="/608902DE/60879879" Ref="U6"  Part="1" 
+F 0 "U3" H 4700 3269 50  0000 C CNN
+F 1 "OPAMP" H 4700 3360 50  0000 C CNN
+F 2 "" H 4700 3750 50  0001 C CNN
+F 3 "~" H 4700 3750 50  0001 C CNN
+F 4 "X" H 4700 3750 50  0001 C CNN "Spice_Primitive"
+F 5 "NE5532TI_SN" H 4700 3750 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 4700 3750 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "/Users/gavinatkinson/Documents/Limerence Labs/Component Models/NE5532_SN.lib" H 4700 3750 50  0001 C CNN "Spice_Lib_File"
+F 8 "1 2 4 5 3" H 4700 3750 50  0001 C CNN "Spice_Node_Sequence"
+	1    4700 3750
+	1    0    0    1   
+$EndComp
+$EndSCHEMATC

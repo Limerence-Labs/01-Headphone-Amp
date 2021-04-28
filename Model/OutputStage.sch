@@ -1,0 +1,1000 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:+15V #PWR?
+U 1 1 6089DBCF
+P 1950 1900
+AR Path="/608770BD/6089DBCF" Ref="#PWR?"  Part="1" 
+AR Path="/608902DE/6089DBCF" Ref="#PWR?"  Part="1" 
+AR Path="/60898451/6089DBCF" Ref="#PWR028"  Part="1" 
+AR Path="/608AE6EB/6089DBCF" Ref="#PWR036"  Part="1" 
+F 0 "#PWR028" H 1950 1750 50  0001 C CNN
+F 1 "+15V" H 1965 2073 50  0000 C CNN
+F 2 "" H 1950 1900 50  0001 C CNN
+F 3 "" H 1950 1900 50  0001 C CNN
+	1    1950 1900
+	-1   0    0    1   
+$EndComp
+$Comp
+L pspice:OPAMP U?
+U 1 1 6089DBDA
+P 2050 1600
+AR Path="/608770BD/6089DBDA" Ref="U?"  Part="1" 
+AR Path="/608902DE/6089DBDA" Ref="U?"  Part="1" 
+AR Path="/60898451/6089DBDA" Ref="U7"  Part="1" 
+AR Path="/608AE6EB/6089DBDA" Ref="U11"  Part="1" 
+F 0 "U7" H 2050 1119 50  0000 C CNN
+F 1 "OPAMP" H 2050 1210 50  0000 C CNN
+F 2 "" H 2050 1600 50  0001 C CNN
+F 3 "~" H 2050 1600 50  0001 C CNN
+F 4 "X" H 2050 1600 50  0001 C CNN "Spice_Primitive"
+F 5 "NE5532TI_SN" H 2050 1600 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 2050 1600 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "/Users/gavinatkinson/Documents/Limerence Labs/Component Models/NE5532_SN.lib" H 2050 1600 50  0001 C CNN "Spice_Lib_File"
+F 8 "1 2 4 5 3" H 2050 1600 50  0001 C CNN "Spice_Node_Sequence"
+	1    2050 1600
+	1    0    0    1   
+$EndComp
+$Comp
+L power:-15V #PWR027
+U 1 1 6089E385
+P 1950 1300
+AR Path="/60898451/6089E385" Ref="#PWR027"  Part="1" 
+AR Path="/608AE6EB/6089E385" Ref="#PWR035"  Part="1" 
+F 0 "#PWR027" H 1950 1400 50  0001 C CNN
+F 1 "-15V" H 1965 1473 50  0000 C CNN
+F 2 "" H 1950 1300 50  0001 C CNN
+F 3 "" H 1950 1300 50  0001 C CNN
+	1    1950 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 1500 1500 1500
+$Comp
+L Device:R R16
+U 1 1 6089F2C6
+P 2550 1600
+AR Path="/60898451/6089F2C6" Ref="R16"  Part="1" 
+AR Path="/608AE6EB/6089F2C6" Ref="R20"  Part="1" 
+F 0 "R16" V 2343 1600 50  0000 C CNN
+F 1 "1" V 2434 1600 50  0000 C CNN
+F 2 "" V 2480 1600 50  0001 C CNN
+F 3 "~" H 2550 1600 50  0001 C CNN
+	1    2550 1600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2400 1600 2350 1600
+Wire Wire Line
+	2700 1600 2950 1600
+Wire Wire Line
+	1200 1700 1750 1700
+Wire Wire Line
+	2350 1600 2350 1000
+Wire Wire Line
+	2350 1000 1500 1000
+Wire Wire Line
+	1500 1000 1500 1500
+Connection ~ 2350 1600
+$Comp
+L power:+15V #PWR?
+U 1 1 608A7D95
+P 1950 3300
+AR Path="/608770BD/608A7D95" Ref="#PWR?"  Part="1" 
+AR Path="/608902DE/608A7D95" Ref="#PWR?"  Part="1" 
+AR Path="/60898451/608A7D95" Ref="#PWR030"  Part="1" 
+AR Path="/608AE6EB/608A7D95" Ref="#PWR038"  Part="1" 
+F 0 "#PWR030" H 1950 3150 50  0001 C CNN
+F 1 "+15V" H 1965 3473 50  0000 C CNN
+F 2 "" H 1950 3300 50  0001 C CNN
+F 3 "" H 1950 3300 50  0001 C CNN
+	1    1950 3300
+	-1   0    0    1   
+$EndComp
+$Comp
+L pspice:OPAMP U?
+U 1 1 608A7DA0
+P 2050 3000
+AR Path="/608770BD/608A7DA0" Ref="U?"  Part="1" 
+AR Path="/608902DE/608A7DA0" Ref="U?"  Part="1" 
+AR Path="/60898451/608A7DA0" Ref="U8"  Part="1" 
+AR Path="/608AE6EB/608A7DA0" Ref="U12"  Part="1" 
+F 0 "U8" H 2050 2519 50  0000 C CNN
+F 1 "OPAMP" H 2050 2610 50  0000 C CNN
+F 2 "" H 2050 3000 50  0001 C CNN
+F 3 "~" H 2050 3000 50  0001 C CNN
+F 4 "X" H 2050 3000 50  0001 C CNN "Spice_Primitive"
+F 5 "NE5532TI_SN" H 2050 3000 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 2050 3000 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "/Users/gavinatkinson/Documents/Limerence Labs/Component Models/NE5532_SN.lib" H 2050 3000 50  0001 C CNN "Spice_Lib_File"
+F 8 "1 2 4 5 3" H 2050 3000 50  0001 C CNN "Spice_Node_Sequence"
+	1    2050 3000
+	1    0    0    1   
+$EndComp
+$Comp
+L power:-15V #PWR029
+U 1 1 608A7DA6
+P 1950 2700
+AR Path="/60898451/608A7DA6" Ref="#PWR029"  Part="1" 
+AR Path="/608AE6EB/608A7DA6" Ref="#PWR037"  Part="1" 
+F 0 "#PWR029" H 1950 2800 50  0001 C CNN
+F 1 "-15V" H 1965 2873 50  0000 C CNN
+F 2 "" H 1950 2700 50  0001 C CNN
+F 3 "" H 1950 2700 50  0001 C CNN
+	1    1950 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 2900 1500 2900
+$Comp
+L Device:R R17
+U 1 1 608A7DAD
+P 2550 3000
+AR Path="/60898451/608A7DAD" Ref="R17"  Part="1" 
+AR Path="/608AE6EB/608A7DAD" Ref="R21"  Part="1" 
+F 0 "R17" V 2343 3000 50  0000 C CNN
+F 1 "1" V 2434 3000 50  0000 C CNN
+F 2 "" V 2480 3000 50  0001 C CNN
+F 3 "~" H 2550 3000 50  0001 C CNN
+	1    2550 3000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2400 3000 2350 3000
+Wire Wire Line
+	2700 3000 2950 3000
+Wire Wire Line
+	1200 3100 1750 3100
+Wire Wire Line
+	2350 3000 2350 2400
+Wire Wire Line
+	2350 2400 1500 2400
+Wire Wire Line
+	1500 2400 1500 2900
+Connection ~ 2350 3000
+$Comp
+L power:+15V #PWR?
+U 1 1 608A9642
+P 1950 4900
+AR Path="/608770BD/608A9642" Ref="#PWR?"  Part="1" 
+AR Path="/608902DE/608A9642" Ref="#PWR?"  Part="1" 
+AR Path="/60898451/608A9642" Ref="#PWR032"  Part="1" 
+AR Path="/608AE6EB/608A9642" Ref="#PWR040"  Part="1" 
+F 0 "#PWR032" H 1950 4750 50  0001 C CNN
+F 1 "+15V" H 1965 5073 50  0000 C CNN
+F 2 "" H 1950 4900 50  0001 C CNN
+F 3 "" H 1950 4900 50  0001 C CNN
+	1    1950 4900
+	-1   0    0    1   
+$EndComp
+$Comp
+L pspice:OPAMP U?
+U 1 1 608A964D
+P 2050 4600
+AR Path="/608770BD/608A964D" Ref="U?"  Part="1" 
+AR Path="/608902DE/608A964D" Ref="U?"  Part="1" 
+AR Path="/60898451/608A964D" Ref="U9"  Part="1" 
+AR Path="/608AE6EB/608A964D" Ref="U13"  Part="1" 
+F 0 "U9" H 2050 4119 50  0000 C CNN
+F 1 "OPAMP" H 2050 4210 50  0000 C CNN
+F 2 "" H 2050 4600 50  0001 C CNN
+F 3 "~" H 2050 4600 50  0001 C CNN
+F 4 "X" H 2050 4600 50  0001 C CNN "Spice_Primitive"
+F 5 "NE5532TI_SN" H 2050 4600 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 2050 4600 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "/Users/gavinatkinson/Documents/Limerence Labs/Component Models/NE5532_SN.lib" H 2050 4600 50  0001 C CNN "Spice_Lib_File"
+F 8 "1 2 4 5 3" H 2050 4600 50  0001 C CNN "Spice_Node_Sequence"
+	1    2050 4600
+	1    0    0    1   
+$EndComp
+$Comp
+L power:-15V #PWR031
+U 1 1 608A9653
+P 1950 4300
+AR Path="/60898451/608A9653" Ref="#PWR031"  Part="1" 
+AR Path="/608AE6EB/608A9653" Ref="#PWR039"  Part="1" 
+F 0 "#PWR031" H 1950 4400 50  0001 C CNN
+F 1 "-15V" H 1965 4473 50  0000 C CNN
+F 2 "" H 1950 4300 50  0001 C CNN
+F 3 "" H 1950 4300 50  0001 C CNN
+	1    1950 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 4500 1500 4500
+$Comp
+L Device:R R18
+U 1 1 608A965A
+P 2550 4600
+AR Path="/60898451/608A965A" Ref="R18"  Part="1" 
+AR Path="/608AE6EB/608A965A" Ref="R22"  Part="1" 
+F 0 "R18" V 2343 4600 50  0000 C CNN
+F 1 "1" V 2434 4600 50  0000 C CNN
+F 2 "" V 2480 4600 50  0001 C CNN
+F 3 "~" H 2550 4600 50  0001 C CNN
+	1    2550 4600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2400 4600 2350 4600
+Wire Wire Line
+	2700 4600 2950 4600
+Wire Wire Line
+	1200 4700 1750 4700
+Wire Wire Line
+	2350 4600 2350 4000
+Wire Wire Line
+	2350 4000 1500 4000
+Wire Wire Line
+	1500 4000 1500 4500
+Connection ~ 2350 4600
+$Comp
+L power:+15V #PWR?
+U 1 1 608AB618
+P 1950 6400
+AR Path="/608770BD/608AB618" Ref="#PWR?"  Part="1" 
+AR Path="/608902DE/608AB618" Ref="#PWR?"  Part="1" 
+AR Path="/60898451/608AB618" Ref="#PWR034"  Part="1" 
+AR Path="/608AE6EB/608AB618" Ref="#PWR042"  Part="1" 
+F 0 "#PWR034" H 1950 6250 50  0001 C CNN
+F 1 "+15V" H 1965 6573 50  0000 C CNN
+F 2 "" H 1950 6400 50  0001 C CNN
+F 3 "" H 1950 6400 50  0001 C CNN
+	1    1950 6400
+	-1   0    0    1   
+$EndComp
+$Comp
+L pspice:OPAMP U?
+U 1 1 608AB623
+P 2050 6100
+AR Path="/608770BD/608AB623" Ref="U?"  Part="1" 
+AR Path="/608902DE/608AB623" Ref="U?"  Part="1" 
+AR Path="/60898451/608AB623" Ref="U10"  Part="1" 
+AR Path="/608AE6EB/608AB623" Ref="U14"  Part="1" 
+F 0 "U10" H 2050 5619 50  0000 C CNN
+F 1 "OPAMP" H 2050 5710 50  0000 C CNN
+F 2 "" H 2050 6100 50  0001 C CNN
+F 3 "~" H 2050 6100 50  0001 C CNN
+F 4 "X" H 2050 6100 50  0001 C CNN "Spice_Primitive"
+F 5 "NE5532TI_SN" H 2050 6100 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 2050 6100 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "/Users/gavinatkinson/Documents/Limerence Labs/Component Models/NE5532_SN.lib" H 2050 6100 50  0001 C CNN "Spice_Lib_File"
+F 8 "1 2 4 5 3" H 2050 6100 50  0001 C CNN "Spice_Node_Sequence"
+	1    2050 6100
+	1    0    0    1   
+$EndComp
+$Comp
+L power:-15V #PWR033
+U 1 1 608AB629
+P 1950 5800
+AR Path="/60898451/608AB629" Ref="#PWR033"  Part="1" 
+AR Path="/608AE6EB/608AB629" Ref="#PWR041"  Part="1" 
+F 0 "#PWR033" H 1950 5900 50  0001 C CNN
+F 1 "-15V" H 1965 5973 50  0000 C CNN
+F 2 "" H 1950 5800 50  0001 C CNN
+F 3 "" H 1950 5800 50  0001 C CNN
+	1    1950 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 6000 1500 6000
+$Comp
+L Device:R R19
+U 1 1 608AB630
+P 2550 6100
+AR Path="/60898451/608AB630" Ref="R19"  Part="1" 
+AR Path="/608AE6EB/608AB630" Ref="R23"  Part="1" 
+F 0 "R19" V 2343 6100 50  0000 C CNN
+F 1 "1" V 2434 6100 50  0000 C CNN
+F 2 "" V 2480 6100 50  0001 C CNN
+F 3 "~" H 2550 6100 50  0001 C CNN
+	1    2550 6100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2400 6100 2350 6100
+Wire Wire Line
+	2700 6100 2950 6100
+Wire Wire Line
+	1200 6200 1750 6200
+Wire Wire Line
+	2350 6100 2350 5500
+Wire Wire Line
+	2350 5500 1500 5500
+Wire Wire Line
+	1500 5500 1500 6000
+Connection ~ 2350 6100
+Wire Wire Line
+	1200 1700 1200 3100
+Connection ~ 1200 3100
+Wire Wire Line
+	1200 3100 1200 4700
+Connection ~ 1200 4700
+Wire Wire Line
+	1200 4700 1200 6200
+Wire Wire Line
+	2950 6100 2950 4600
+Connection ~ 2950 3000
+Wire Wire Line
+	2950 3000 2950 1600
+Connection ~ 2950 4600
+Wire Wire Line
+	2950 4600 2950 3000
+Wire Wire Line
+	1200 3100 1000 3100
+Wire Wire Line
+	2950 3000 3250 3000
+Text HLabel 3250 3000 2    50   Output ~ 0
+OUT
+Text HLabel 1000 3100 0    50   Input ~ 0
+IN
+$Comp
+L power:+15V #PWR?
+U 1 1 608C5050
+P 4750 1900
+AR Path="/608770BD/608C5050" Ref="#PWR?"  Part="1" 
+AR Path="/608902DE/608C5050" Ref="#PWR?"  Part="1" 
+AR Path="/60898451/608C5050" Ref="#PWR044"  Part="1" 
+AR Path="/608AE6EB/608C5050" Ref="#PWR052"  Part="1" 
+F 0 "#PWR044" H 4750 1750 50  0001 C CNN
+F 1 "+15V" H 4765 2073 50  0000 C CNN
+F 2 "" H 4750 1900 50  0001 C CNN
+F 3 "" H 4750 1900 50  0001 C CNN
+	1    4750 1900
+	-1   0    0    1   
+$EndComp
+$Comp
+L pspice:OPAMP U?
+U 1 1 608C505B
+P 4850 1600
+AR Path="/608770BD/608C505B" Ref="U?"  Part="1" 
+AR Path="/608902DE/608C505B" Ref="U?"  Part="1" 
+AR Path="/60898451/608C505B" Ref="U15"  Part="1" 
+AR Path="/608AE6EB/608C505B" Ref="U19"  Part="1" 
+F 0 "U15" H 4850 1119 50  0000 C CNN
+F 1 "OPAMP" H 4850 1210 50  0000 C CNN
+F 2 "" H 4850 1600 50  0001 C CNN
+F 3 "~" H 4850 1600 50  0001 C CNN
+F 4 "X" H 4850 1600 50  0001 C CNN "Spice_Primitive"
+F 5 "NE5532TI_SN" H 4850 1600 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 4850 1600 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "/Users/gavinatkinson/Documents/Limerence Labs/Component Models/NE5532_SN.lib" H 4850 1600 50  0001 C CNN "Spice_Lib_File"
+F 8 "1 2 4 5 3" H 4850 1600 50  0001 C CNN "Spice_Node_Sequence"
+	1    4850 1600
+	1    0    0    1   
+$EndComp
+$Comp
+L power:-15V #PWR043
+U 1 1 608C5061
+P 4750 1300
+AR Path="/60898451/608C5061" Ref="#PWR043"  Part="1" 
+AR Path="/608AE6EB/608C5061" Ref="#PWR051"  Part="1" 
+F 0 "#PWR043" H 4750 1400 50  0001 C CNN
+F 1 "-15V" H 4765 1473 50  0000 C CNN
+F 2 "" H 4750 1300 50  0001 C CNN
+F 3 "" H 4750 1300 50  0001 C CNN
+	1    4750 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 1500 4300 1500
+$Comp
+L Device:R R24
+U 1 1 608C5068
+P 5350 1600
+AR Path="/60898451/608C5068" Ref="R24"  Part="1" 
+AR Path="/608AE6EB/608C5068" Ref="R28"  Part="1" 
+F 0 "R24" V 5143 1600 50  0000 C CNN
+F 1 "1" V 5234 1600 50  0000 C CNN
+F 2 "" V 5280 1600 50  0001 C CNN
+F 3 "~" H 5350 1600 50  0001 C CNN
+	1    5350 1600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5200 1600 5150 1600
+Wire Wire Line
+	5500 1600 5750 1600
+Wire Wire Line
+	4000 1700 4550 1700
+Wire Wire Line
+	5150 1600 5150 1000
+Wire Wire Line
+	5150 1000 4300 1000
+Wire Wire Line
+	4300 1000 4300 1500
+Connection ~ 5150 1600
+$Comp
+L power:+15V #PWR?
+U 1 1 608C5075
+P 4750 3300
+AR Path="/608770BD/608C5075" Ref="#PWR?"  Part="1" 
+AR Path="/608902DE/608C5075" Ref="#PWR?"  Part="1" 
+AR Path="/60898451/608C5075" Ref="#PWR046"  Part="1" 
+AR Path="/608AE6EB/608C5075" Ref="#PWR054"  Part="1" 
+F 0 "#PWR046" H 4750 3150 50  0001 C CNN
+F 1 "+15V" H 4765 3473 50  0000 C CNN
+F 2 "" H 4750 3300 50  0001 C CNN
+F 3 "" H 4750 3300 50  0001 C CNN
+	1    4750 3300
+	-1   0    0    1   
+$EndComp
+$Comp
+L pspice:OPAMP U?
+U 1 1 608C5080
+P 4850 3000
+AR Path="/608770BD/608C5080" Ref="U?"  Part="1" 
+AR Path="/608902DE/608C5080" Ref="U?"  Part="1" 
+AR Path="/60898451/608C5080" Ref="U16"  Part="1" 
+AR Path="/608AE6EB/608C5080" Ref="U20"  Part="1" 
+F 0 "U16" H 4850 2519 50  0000 C CNN
+F 1 "OPAMP" H 4850 2610 50  0000 C CNN
+F 2 "" H 4850 3000 50  0001 C CNN
+F 3 "~" H 4850 3000 50  0001 C CNN
+F 4 "X" H 4850 3000 50  0001 C CNN "Spice_Primitive"
+F 5 "NE5532TI_SN" H 4850 3000 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 4850 3000 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "/Users/gavinatkinson/Documents/Limerence Labs/Component Models/NE5532_SN.lib" H 4850 3000 50  0001 C CNN "Spice_Lib_File"
+F 8 "1 2 4 5 3" H 4850 3000 50  0001 C CNN "Spice_Node_Sequence"
+	1    4850 3000
+	1    0    0    1   
+$EndComp
+$Comp
+L power:-15V #PWR045
+U 1 1 608C5086
+P 4750 2700
+AR Path="/60898451/608C5086" Ref="#PWR045"  Part="1" 
+AR Path="/608AE6EB/608C5086" Ref="#PWR053"  Part="1" 
+F 0 "#PWR045" H 4750 2800 50  0001 C CNN
+F 1 "-15V" H 4765 2873 50  0000 C CNN
+F 2 "" H 4750 2700 50  0001 C CNN
+F 3 "" H 4750 2700 50  0001 C CNN
+	1    4750 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 2900 4300 2900
+$Comp
+L Device:R R25
+U 1 1 608C508D
+P 5350 3000
+AR Path="/60898451/608C508D" Ref="R25"  Part="1" 
+AR Path="/608AE6EB/608C508D" Ref="R29"  Part="1" 
+F 0 "R25" V 5143 3000 50  0000 C CNN
+F 1 "1" V 5234 3000 50  0000 C CNN
+F 2 "" V 5280 3000 50  0001 C CNN
+F 3 "~" H 5350 3000 50  0001 C CNN
+	1    5350 3000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5200 3000 5150 3000
+Wire Wire Line
+	5500 3000 5750 3000
+Wire Wire Line
+	4000 3100 4550 3100
+Wire Wire Line
+	5150 3000 5150 2400
+Wire Wire Line
+	5150 2400 4300 2400
+Wire Wire Line
+	4300 2400 4300 2900
+Connection ~ 5150 3000
+$Comp
+L power:+15V #PWR?
+U 1 1 608C509A
+P 4750 4900
+AR Path="/608770BD/608C509A" Ref="#PWR?"  Part="1" 
+AR Path="/608902DE/608C509A" Ref="#PWR?"  Part="1" 
+AR Path="/60898451/608C509A" Ref="#PWR048"  Part="1" 
+AR Path="/608AE6EB/608C509A" Ref="#PWR056"  Part="1" 
+F 0 "#PWR048" H 4750 4750 50  0001 C CNN
+F 1 "+15V" H 4765 5073 50  0000 C CNN
+F 2 "" H 4750 4900 50  0001 C CNN
+F 3 "" H 4750 4900 50  0001 C CNN
+	1    4750 4900
+	-1   0    0    1   
+$EndComp
+$Comp
+L pspice:OPAMP U?
+U 1 1 608C50A5
+P 4850 4600
+AR Path="/608770BD/608C50A5" Ref="U?"  Part="1" 
+AR Path="/608902DE/608C50A5" Ref="U?"  Part="1" 
+AR Path="/60898451/608C50A5" Ref="U17"  Part="1" 
+AR Path="/608AE6EB/608C50A5" Ref="U21"  Part="1" 
+F 0 "U17" H 4850 4119 50  0000 C CNN
+F 1 "OPAMP" H 4850 4210 50  0000 C CNN
+F 2 "" H 4850 4600 50  0001 C CNN
+F 3 "~" H 4850 4600 50  0001 C CNN
+F 4 "X" H 4850 4600 50  0001 C CNN "Spice_Primitive"
+F 5 "NE5532TI_SN" H 4850 4600 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 4850 4600 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "/Users/gavinatkinson/Documents/Limerence Labs/Component Models/NE5532_SN.lib" H 4850 4600 50  0001 C CNN "Spice_Lib_File"
+F 8 "1 2 4 5 3" H 4850 4600 50  0001 C CNN "Spice_Node_Sequence"
+	1    4850 4600
+	1    0    0    1   
+$EndComp
+$Comp
+L power:-15V #PWR047
+U 1 1 608C50AB
+P 4750 4300
+AR Path="/60898451/608C50AB" Ref="#PWR047"  Part="1" 
+AR Path="/608AE6EB/608C50AB" Ref="#PWR055"  Part="1" 
+F 0 "#PWR047" H 4750 4400 50  0001 C CNN
+F 1 "-15V" H 4765 4473 50  0000 C CNN
+F 2 "" H 4750 4300 50  0001 C CNN
+F 3 "" H 4750 4300 50  0001 C CNN
+	1    4750 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 4500 4300 4500
+$Comp
+L Device:R R26
+U 1 1 608C50B2
+P 5350 4600
+AR Path="/60898451/608C50B2" Ref="R26"  Part="1" 
+AR Path="/608AE6EB/608C50B2" Ref="R30"  Part="1" 
+F 0 "R26" V 5143 4600 50  0000 C CNN
+F 1 "1" V 5234 4600 50  0000 C CNN
+F 2 "" V 5280 4600 50  0001 C CNN
+F 3 "~" H 5350 4600 50  0001 C CNN
+	1    5350 4600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5200 4600 5150 4600
+Wire Wire Line
+	5500 4600 5750 4600
+Wire Wire Line
+	4000 4700 4550 4700
+Wire Wire Line
+	5150 4600 5150 4000
+Wire Wire Line
+	5150 4000 4300 4000
+Wire Wire Line
+	4300 4000 4300 4500
+Connection ~ 5150 4600
+$Comp
+L power:+15V #PWR?
+U 1 1 608C50BF
+P 4750 6400
+AR Path="/608770BD/608C50BF" Ref="#PWR?"  Part="1" 
+AR Path="/608902DE/608C50BF" Ref="#PWR?"  Part="1" 
+AR Path="/60898451/608C50BF" Ref="#PWR050"  Part="1" 
+AR Path="/608AE6EB/608C50BF" Ref="#PWR058"  Part="1" 
+F 0 "#PWR050" H 4750 6250 50  0001 C CNN
+F 1 "+15V" H 4765 6573 50  0000 C CNN
+F 2 "" H 4750 6400 50  0001 C CNN
+F 3 "" H 4750 6400 50  0001 C CNN
+	1    4750 6400
+	-1   0    0    1   
+$EndComp
+$Comp
+L pspice:OPAMP U?
+U 1 1 608C50CA
+P 4850 6100
+AR Path="/608770BD/608C50CA" Ref="U?"  Part="1" 
+AR Path="/608902DE/608C50CA" Ref="U?"  Part="1" 
+AR Path="/60898451/608C50CA" Ref="U18"  Part="1" 
+AR Path="/608AE6EB/608C50CA" Ref="U22"  Part="1" 
+F 0 "U18" H 4850 5619 50  0000 C CNN
+F 1 "OPAMP" H 4850 5710 50  0000 C CNN
+F 2 "" H 4850 6100 50  0001 C CNN
+F 3 "~" H 4850 6100 50  0001 C CNN
+F 4 "X" H 4850 6100 50  0001 C CNN "Spice_Primitive"
+F 5 "NE5532TI_SN" H 4850 6100 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 4850 6100 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "/Users/gavinatkinson/Documents/Limerence Labs/Component Models/NE5532_SN.lib" H 4850 6100 50  0001 C CNN "Spice_Lib_File"
+F 8 "1 2 4 5 3" H 4850 6100 50  0001 C CNN "Spice_Node_Sequence"
+	1    4850 6100
+	1    0    0    1   
+$EndComp
+$Comp
+L power:-15V #PWR049
+U 1 1 608C50D0
+P 4750 5800
+AR Path="/60898451/608C50D0" Ref="#PWR049"  Part="1" 
+AR Path="/608AE6EB/608C50D0" Ref="#PWR057"  Part="1" 
+F 0 "#PWR049" H 4750 5900 50  0001 C CNN
+F 1 "-15V" H 4765 5973 50  0000 C CNN
+F 2 "" H 4750 5800 50  0001 C CNN
+F 3 "" H 4750 5800 50  0001 C CNN
+	1    4750 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 6000 4300 6000
+$Comp
+L Device:R R27
+U 1 1 608C50D7
+P 5350 6100
+AR Path="/60898451/608C50D7" Ref="R27"  Part="1" 
+AR Path="/608AE6EB/608C50D7" Ref="R31"  Part="1" 
+F 0 "R27" V 5143 6100 50  0000 C CNN
+F 1 "1" V 5234 6100 50  0000 C CNN
+F 2 "" V 5280 6100 50  0001 C CNN
+F 3 "~" H 5350 6100 50  0001 C CNN
+	1    5350 6100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5200 6100 5150 6100
+Wire Wire Line
+	5500 6100 5750 6100
+Wire Wire Line
+	4000 6200 4550 6200
+Wire Wire Line
+	5150 6100 5150 5500
+Wire Wire Line
+	5150 5500 4300 5500
+Wire Wire Line
+	4300 5500 4300 6000
+Connection ~ 5150 6100
+Wire Wire Line
+	4000 1700 4000 3100
+Connection ~ 4000 3100
+Wire Wire Line
+	4000 3100 4000 4700
+Connection ~ 4000 4700
+Wire Wire Line
+	4000 4700 4000 6200
+Wire Wire Line
+	5750 6100 5750 4600
+Connection ~ 5750 3000
+Wire Wire Line
+	5750 3000 5750 1600
+Connection ~ 5750 4600
+Wire Wire Line
+	5750 4600 5750 3000
+Wire Wire Line
+	4000 3100 3800 3100
+Wire Wire Line
+	5750 3000 6050 3000
+Text HLabel 6050 3000 2    50   Output ~ 0
+OUT
+Text HLabel 3800 3100 0    50   Input ~ 0
+IN
+$Comp
+L power:+15V #PWR?
+U 1 1 608B6BB1
+P 7250 1700
+AR Path="/608770BD/608B6BB1" Ref="#PWR?"  Part="1" 
+AR Path="/608902DE/608B6BB1" Ref="#PWR?"  Part="1" 
+AR Path="/60898451/608B6BB1" Ref="#PWR060"  Part="1" 
+AR Path="/608AE6EB/608B6BB1" Ref="#PWR068"  Part="1" 
+F 0 "#PWR060" H 7250 1550 50  0001 C CNN
+F 1 "+15V" H 7265 1873 50  0000 C CNN
+F 2 "" H 7250 1700 50  0001 C CNN
+F 3 "" H 7250 1700 50  0001 C CNN
+	1    7250 1700
+	-1   0    0    1   
+$EndComp
+$Comp
+L pspice:OPAMP U?
+U 1 1 608B6BBC
+P 7350 1400
+AR Path="/608770BD/608B6BBC" Ref="U?"  Part="1" 
+AR Path="/608902DE/608B6BBC" Ref="U?"  Part="1" 
+AR Path="/60898451/608B6BBC" Ref="U23"  Part="1" 
+AR Path="/608AE6EB/608B6BBC" Ref="U27"  Part="1" 
+F 0 "U23" H 7350 919 50  0000 C CNN
+F 1 "OPAMP" H 7350 1010 50  0000 C CNN
+F 2 "" H 7350 1400 50  0001 C CNN
+F 3 "~" H 7350 1400 50  0001 C CNN
+F 4 "X" H 7350 1400 50  0001 C CNN "Spice_Primitive"
+F 5 "NE5532TI_SN" H 7350 1400 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 7350 1400 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "/Users/gavinatkinson/Documents/Limerence Labs/Component Models/NE5532_SN.lib" H 7350 1400 50  0001 C CNN "Spice_Lib_File"
+F 8 "1 2 4 5 3" H 7350 1400 50  0001 C CNN "Spice_Node_Sequence"
+	1    7350 1400
+	1    0    0    1   
+$EndComp
+$Comp
+L power:-15V #PWR059
+U 1 1 608B6BC2
+P 7250 1100
+AR Path="/60898451/608B6BC2" Ref="#PWR059"  Part="1" 
+AR Path="/608AE6EB/608B6BC2" Ref="#PWR067"  Part="1" 
+F 0 "#PWR059" H 7250 1200 50  0001 C CNN
+F 1 "-15V" H 7265 1273 50  0000 C CNN
+F 2 "" H 7250 1100 50  0001 C CNN
+F 3 "" H 7250 1100 50  0001 C CNN
+	1    7250 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 1300 6800 1300
+$Comp
+L Device:R R32
+U 1 1 608B6BC9
+P 7850 1400
+AR Path="/60898451/608B6BC9" Ref="R32"  Part="1" 
+AR Path="/608AE6EB/608B6BC9" Ref="R37"  Part="1" 
+F 0 "R32" V 7643 1400 50  0000 C CNN
+F 1 "1" V 7734 1400 50  0000 C CNN
+F 2 "" V 7780 1400 50  0001 C CNN
+F 3 "~" H 7850 1400 50  0001 C CNN
+	1    7850 1400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7700 1400 7650 1400
+Wire Wire Line
+	8000 1400 8250 1400
+Wire Wire Line
+	6500 1500 7050 1500
+Wire Wire Line
+	7650 1400 7650 800 
+Wire Wire Line
+	7650 800  6800 800 
+Wire Wire Line
+	6800 800  6800 1300
+Connection ~ 7650 1400
+$Comp
+L power:+15V #PWR?
+U 1 1 608B6BD6
+P 7250 3100
+AR Path="/608770BD/608B6BD6" Ref="#PWR?"  Part="1" 
+AR Path="/608902DE/608B6BD6" Ref="#PWR?"  Part="1" 
+AR Path="/60898451/608B6BD6" Ref="#PWR062"  Part="1" 
+AR Path="/608AE6EB/608B6BD6" Ref="#PWR070"  Part="1" 
+F 0 "#PWR062" H 7250 2950 50  0001 C CNN
+F 1 "+15V" H 7265 3273 50  0000 C CNN
+F 2 "" H 7250 3100 50  0001 C CNN
+F 3 "" H 7250 3100 50  0001 C CNN
+	1    7250 3100
+	-1   0    0    1   
+$EndComp
+$Comp
+L pspice:OPAMP U?
+U 1 1 608B6BE1
+P 7350 2800
+AR Path="/608770BD/608B6BE1" Ref="U?"  Part="1" 
+AR Path="/608902DE/608B6BE1" Ref="U?"  Part="1" 
+AR Path="/60898451/608B6BE1" Ref="U24"  Part="1" 
+AR Path="/608AE6EB/608B6BE1" Ref="U28"  Part="1" 
+F 0 "U24" H 7350 2319 50  0000 C CNN
+F 1 "OPAMP" H 7350 2410 50  0000 C CNN
+F 2 "" H 7350 2800 50  0001 C CNN
+F 3 "~" H 7350 2800 50  0001 C CNN
+F 4 "X" H 7350 2800 50  0001 C CNN "Spice_Primitive"
+F 5 "NE5532TI_SN" H 7350 2800 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 7350 2800 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "/Users/gavinatkinson/Documents/Limerence Labs/Component Models/NE5532_SN.lib" H 7350 2800 50  0001 C CNN "Spice_Lib_File"
+F 8 "1 2 4 5 3" H 7350 2800 50  0001 C CNN "Spice_Node_Sequence"
+	1    7350 2800
+	1    0    0    1   
+$EndComp
+$Comp
+L power:-15V #PWR061
+U 1 1 608B6BE7
+P 7250 2500
+AR Path="/60898451/608B6BE7" Ref="#PWR061"  Part="1" 
+AR Path="/608AE6EB/608B6BE7" Ref="#PWR069"  Part="1" 
+F 0 "#PWR061" H 7250 2600 50  0001 C CNN
+F 1 "-15V" H 7265 2673 50  0000 C CNN
+F 2 "" H 7250 2500 50  0001 C CNN
+F 3 "" H 7250 2500 50  0001 C CNN
+	1    7250 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 2700 6800 2700
+$Comp
+L Device:R R33
+U 1 1 608B6BEE
+P 7850 2800
+AR Path="/60898451/608B6BEE" Ref="R33"  Part="1" 
+AR Path="/608AE6EB/608B6BEE" Ref="R38"  Part="1" 
+F 0 "R33" V 7643 2800 50  0000 C CNN
+F 1 "1" V 7734 2800 50  0000 C CNN
+F 2 "" V 7780 2800 50  0001 C CNN
+F 3 "~" H 7850 2800 50  0001 C CNN
+	1    7850 2800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7700 2800 7650 2800
+Wire Wire Line
+	8000 2800 8250 2800
+Wire Wire Line
+	6500 2900 7050 2900
+Wire Wire Line
+	7650 2800 7650 2200
+Wire Wire Line
+	7650 2200 6800 2200
+Wire Wire Line
+	6800 2200 6800 2700
+Connection ~ 7650 2800
+$Comp
+L power:+15V #PWR?
+U 1 1 608B6BFB
+P 7250 4700
+AR Path="/608770BD/608B6BFB" Ref="#PWR?"  Part="1" 
+AR Path="/608902DE/608B6BFB" Ref="#PWR?"  Part="1" 
+AR Path="/60898451/608B6BFB" Ref="#PWR064"  Part="1" 
+AR Path="/608AE6EB/608B6BFB" Ref="#PWR072"  Part="1" 
+F 0 "#PWR064" H 7250 4550 50  0001 C CNN
+F 1 "+15V" H 7265 4873 50  0000 C CNN
+F 2 "" H 7250 4700 50  0001 C CNN
+F 3 "" H 7250 4700 50  0001 C CNN
+	1    7250 4700
+	-1   0    0    1   
+$EndComp
+$Comp
+L pspice:OPAMP U?
+U 1 1 608B6C06
+P 7350 4400
+AR Path="/608770BD/608B6C06" Ref="U?"  Part="1" 
+AR Path="/608902DE/608B6C06" Ref="U?"  Part="1" 
+AR Path="/60898451/608B6C06" Ref="U25"  Part="1" 
+AR Path="/608AE6EB/608B6C06" Ref="U29"  Part="1" 
+F 0 "U25" H 7350 3919 50  0000 C CNN
+F 1 "OPAMP" H 7350 4010 50  0000 C CNN
+F 2 "" H 7350 4400 50  0001 C CNN
+F 3 "~" H 7350 4400 50  0001 C CNN
+F 4 "X" H 7350 4400 50  0001 C CNN "Spice_Primitive"
+F 5 "NE5532TI_SN" H 7350 4400 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 7350 4400 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "/Users/gavinatkinson/Documents/Limerence Labs/Component Models/NE5532_SN.lib" H 7350 4400 50  0001 C CNN "Spice_Lib_File"
+F 8 "1 2 4 5 3" H 7350 4400 50  0001 C CNN "Spice_Node_Sequence"
+	1    7350 4400
+	1    0    0    1   
+$EndComp
+$Comp
+L power:-15V #PWR063
+U 1 1 608B6C0C
+P 7250 4100
+AR Path="/60898451/608B6C0C" Ref="#PWR063"  Part="1" 
+AR Path="/608AE6EB/608B6C0C" Ref="#PWR071"  Part="1" 
+F 0 "#PWR063" H 7250 4200 50  0001 C CNN
+F 1 "-15V" H 7265 4273 50  0000 C CNN
+F 2 "" H 7250 4100 50  0001 C CNN
+F 3 "" H 7250 4100 50  0001 C CNN
+	1    7250 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 4300 6800 4300
+$Comp
+L Device:R R35
+U 1 1 608B6C13
+P 7850 4400
+AR Path="/60898451/608B6C13" Ref="R35"  Part="1" 
+AR Path="/608AE6EB/608B6C13" Ref="R39"  Part="1" 
+F 0 "R35" V 7643 4400 50  0000 C CNN
+F 1 "1" V 7734 4400 50  0000 C CNN
+F 2 "" V 7780 4400 50  0001 C CNN
+F 3 "~" H 7850 4400 50  0001 C CNN
+	1    7850 4400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7700 4400 7650 4400
+Wire Wire Line
+	8000 4400 8250 4400
+Wire Wire Line
+	6500 4500 7050 4500
+Wire Wire Line
+	7650 4400 7650 3800
+Wire Wire Line
+	7650 3800 6800 3800
+Wire Wire Line
+	6800 3800 6800 4300
+Connection ~ 7650 4400
+$Comp
+L power:+15V #PWR?
+U 1 1 608B6C20
+P 7250 6200
+AR Path="/608770BD/608B6C20" Ref="#PWR?"  Part="1" 
+AR Path="/608902DE/608B6C20" Ref="#PWR?"  Part="1" 
+AR Path="/60898451/608B6C20" Ref="#PWR066"  Part="1" 
+AR Path="/608AE6EB/608B6C20" Ref="#PWR074"  Part="1" 
+F 0 "#PWR066" H 7250 6050 50  0001 C CNN
+F 1 "+15V" H 7265 6373 50  0000 C CNN
+F 2 "" H 7250 6200 50  0001 C CNN
+F 3 "" H 7250 6200 50  0001 C CNN
+	1    7250 6200
+	-1   0    0    1   
+$EndComp
+$Comp
+L pspice:OPAMP U?
+U 1 1 608B6C2B
+P 7350 5900
+AR Path="/608770BD/608B6C2B" Ref="U?"  Part="1" 
+AR Path="/608902DE/608B6C2B" Ref="U?"  Part="1" 
+AR Path="/60898451/608B6C2B" Ref="U26"  Part="1" 
+AR Path="/608AE6EB/608B6C2B" Ref="U30"  Part="1" 
+F 0 "U26" H 7350 5419 50  0000 C CNN
+F 1 "OPAMP" H 7350 5510 50  0000 C CNN
+F 2 "" H 7350 5900 50  0001 C CNN
+F 3 "~" H 7350 5900 50  0001 C CNN
+F 4 "X" H 7350 5900 50  0001 C CNN "Spice_Primitive"
+F 5 "NE5532TI_SN" H 7350 5900 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 7350 5900 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "/Users/gavinatkinson/Documents/Limerence Labs/Component Models/NE5532_SN.lib" H 7350 5900 50  0001 C CNN "Spice_Lib_File"
+F 8 "1 2 4 5 3" H 7350 5900 50  0001 C CNN "Spice_Node_Sequence"
+	1    7350 5900
+	1    0    0    1   
+$EndComp
+$Comp
+L power:-15V #PWR065
+U 1 1 608B6C31
+P 7250 5600
+AR Path="/60898451/608B6C31" Ref="#PWR065"  Part="1" 
+AR Path="/608AE6EB/608B6C31" Ref="#PWR073"  Part="1" 
+F 0 "#PWR065" H 7250 5700 50  0001 C CNN
+F 1 "-15V" H 7265 5773 50  0000 C CNN
+F 2 "" H 7250 5600 50  0001 C CNN
+F 3 "" H 7250 5600 50  0001 C CNN
+	1    7250 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 5800 6800 5800
+$Comp
+L Device:R R36
+U 1 1 608B6C38
+P 7850 5900
+AR Path="/60898451/608B6C38" Ref="R36"  Part="1" 
+AR Path="/608AE6EB/608B6C38" Ref="R40"  Part="1" 
+F 0 "R36" V 7643 5900 50  0000 C CNN
+F 1 "1" V 7734 5900 50  0000 C CNN
+F 2 "" V 7780 5900 50  0001 C CNN
+F 3 "~" H 7850 5900 50  0001 C CNN
+	1    7850 5900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7700 5900 7650 5900
+Wire Wire Line
+	8000 5900 8250 5900
+Wire Wire Line
+	6500 6000 7050 6000
+Wire Wire Line
+	7650 5900 7650 5300
+Wire Wire Line
+	7650 5300 6800 5300
+Wire Wire Line
+	6800 5300 6800 5800
+Connection ~ 7650 5900
+Wire Wire Line
+	6500 1500 6500 2900
+Connection ~ 6500 2900
+Wire Wire Line
+	6500 2900 6500 4500
+Connection ~ 6500 4500
+Wire Wire Line
+	6500 4500 6500 6000
+Wire Wire Line
+	8250 5900 8250 4400
+Connection ~ 8250 2800
+Wire Wire Line
+	8250 2800 8250 1400
+Connection ~ 8250 4400
+Wire Wire Line
+	8250 4400 8250 2800
+Wire Wire Line
+	6500 2900 6300 2900
+Wire Wire Line
+	8250 2800 8550 2800
+Text HLabel 8550 2800 2    50   Output ~ 0
+OUT
+Text HLabel 6300 2900 0    50   Input ~ 0
+IN
+$EndSCHEMATC
